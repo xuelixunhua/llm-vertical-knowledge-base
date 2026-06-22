@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local processing artifacts
+tmp/
+*.log
+
+# Python and editor cache
+__pycache__/
+.pytest_cache/
+.vscode/
+.idea/
+
