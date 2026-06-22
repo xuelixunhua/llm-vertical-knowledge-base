@@ -127,6 +127,12 @@ Do not leave a processed source as only filename plus keywords. Keywords help re
 
 Do not add a confident viewpoint entry for a source that has not actually been read, extracted, OCRed, or otherwise understood. In that case, either keep a minimal provenance listing or report the processing status outside the durable index.
 
+Use the source's role to choose the compression lens:
+
+- **Method or framework source**: extract the reusable model, variables, mechanism chain, evidence shape, and failure boundary. The entry should help future agents know how to reason with the method, not merely where it came from.
+- **Single signal, concept, or tool source**: extract what the signal claims to measure, whether the evidence supports the claim, what hidden driver may explain the effect, and when the signal should be redefined, filtered, or ignored.
+- **Application, cross-asset, case, or output source**: extract what changes when the same method enters a new asset, scenario, market regime, workflow, or lived case. The entry should preserve the transfer condition and the reason the result may not generalize.
+
 ### README
 
 The README is the human-facing entrance.
