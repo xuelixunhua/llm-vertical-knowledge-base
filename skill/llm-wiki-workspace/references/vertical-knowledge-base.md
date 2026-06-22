@@ -9,7 +9,7 @@ The target is a durable domain judgment system that lets future agents apply a f
 A vertical knowledge base should be organized around three material layers:
 
 1. **First layer: bottom materials**
-   Raw or bottom-layer material, including original books, reports, PDFs, transcripts, datasets, backtests, outputs, cases, and other source documents. Preserve provenance and avoid over-processing at the folder-maintenance stage.
+   Raw or bottom-layer material, including original books, reports, PDFs, transcripts, datasets, backtests, outputs, cases, and other source documents. Preserve provenance and avoid over-processing at the folder-maintenance stage. When a first-layer source is useful but not worth a standalone second-layer note or a third-layer rewrite, compress it into a viewpoint index entry instead of leaving only keywords.
 2. **Second layer: type-organized compression**
    Material that has already been sorted or compressed by source type, book type, method type, or user workflow. Examples include book notes, method notes, source cards, and self-produced intermediate notes. A report becomes second-layer material only when it deserves a reusable standalone note; many first-layer reports should be indexed directly instead.
 3. **Third layer: recomposed domain knowledge**
@@ -93,8 +93,39 @@ It should separate:
 - where future agents should read next
 
 It may mention first-layer sources, but those index sections must stay separate from the third-layer body.
-First-layer sources do not need to pass through the second layer. If a report only needs provenance, topic tags, callable conclusions, and links to the third-layer body, keep it in the material index instead of creating a standalone second-layer note.
+First-layer sources do not need to pass through the second layer. If a source only needs provenance, topic tags, callable conclusions, and links to the third-layer body, keep it in the material index instead of creating a standalone second-layer note.
 Keep extraction status, OCR failures, and processing diagnostics out of the durable material index; report them in chat or temporary audit files instead.
+
+### First-layer viewpoint index entries
+
+Use viewpoint index entries for first-layer material that has been read or reliably extracted, contains useful domain signal, but does not yet deserve a standalone second-layer note or direct third-layer integration.
+
+This pattern applies across source types:
+
+- reports: capture the research conclusion, method, evidence shape, and applicability boundary
+- books or chapters: capture the reusable concept, argument, model, or contradiction without reproducing the book structure
+- transcripts, courses, interviews, or meetings: capture the operating principle, decision routine, diagnostic question, or lived case logic
+- backtests, datasets, outputs, or cases: capture what phenomenon they show, what question they answer, and what their limits are
+- images, charts, or tables: capture the finding and interpretation path, not only the visual label
+
+A viewpoint index entry should answer four questions in compressed form:
+
+1. What is the source about?
+2. What conclusion, mechanism, or judgment does it contribute?
+3. When should a future agent call it?
+4. Which third-layer concept, routine, boundary, or open question does it support?
+
+Preferred entry shape:
+
+```markdown
+- `<Source name>`: <one compact core conclusion>. <key mechanism, evidence, or boundary>. 支撑 `<third-layer tag>`、`<third-layer tag>`、`<use-case tag>`.
+```
+
+For a narrow source, one or two sentences are enough. For a dense method source, three to five compressed sentences are acceptable. If the entry keeps growing, that is evidence the source should become a second-layer note or should update the third-layer main note.
+
+Do not leave a processed source as only filename plus keywords. Keywords help retrieval, but conclusions make the index useful. A durable material index should be a call surface, not a directory listing.
+
+Do not add a confident viewpoint entry for a source that has not actually been read, extracted, OCRed, or otherwise understood. In that case, either keep a minimal provenance listing or report the processing status outside the durable index.
 
 ### README
 
@@ -169,7 +200,7 @@ Workflow:
 2. Classify the incoming material.
    Decide whether it is first-layer source material, second-layer compressed material, a third-layer framework update, a case, a contradiction, or an open question.
 3. Preserve source lineage.
-   Update the material index when provenance matters. For many reports, index-level treatment is enough.
+   Update the material index when provenance matters. For many reports, chapters, transcripts, cases, or outputs, viewpoint-index treatment is enough.
 4. Strengthen existing pages.
    Merge durable knowledge into the third-layer main note or a relevant existing third-layer page instead of creating a parallel summary.
 5. Resolve conflicts explicitly.

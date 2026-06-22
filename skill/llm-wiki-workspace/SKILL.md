@@ -1,6 +1,6 @@
 ---
 name: llm-wiki-workspace
-description: Build and maintain a local markdown-first LLM Wiki for research or project folders, including vertical knowledge bases that turn field notes and sources into a reusable domain judgment system. Use this whenever the user wants to turn notes, markdown files, PDFs, spreadsheets, images, scripts, reports, or mixed project folders into a persistent wiki or a readable input-to-output knowledge workspace. This skill should trigger when the user wants the classic `raw/ + wiki/ + scripts/ + outputs/ + tmp/` structure, when they want to semantically compile an already-mature workspace without aggressively moving files, or when they ask to build or extend a vertical/domain knowledge base for long-term application, knowledge awakening, field-specific reasoning, book-note reuse, framework synthesis, or domain application playbooks. Also use it when the user mentions LLM Wiki, compiled knowledge bases, vertical knowledge base, domain knowledge base, Obsidian-style research repos, source ingestion, source promotion, filename type tags, shallow folder architecture, wiki linting, semantic indexing of folders, or asks how to make a large local folder understandable and editable by the LLM over time while still easy for humans to browse.
+description: Build and maintain markdown-first LLM Wiki workspaces for research or project folders, including vertical/domain knowledge bases. Use when the user wants folder cleanup plus wiki, semantic compilation of a mature workspace without aggressive moves, raw/wiki/scripts/outputs/tmp or shallow input-output structure, source ingestion and promotion, material indexes, filename type tags, Obsidian-style repos, or a folder that stays understandable to LLMs and humans. Also use for long-term application of field notes, dormant knowledge awakening, three-layer source/note/framework organization, vertical knowledge base initial or supplemental builds, domain judgment systems, application playbooks, or field-specific reasoning across books, reports, PDFs, transcripts, datasets, outputs, cases, and mixed folders.
 ---
 
 # LLM Wiki Workspace
@@ -169,7 +169,7 @@ Treat the workspace as three material layers plus a clear application entry:
 Support two submodes:
 
 - initial build: create the three-layer folder structure, third-layer main note or index, material index, README/AGENTS instructions, and log or navigation updates
-- supplemental build: read the existing third-layer main note and material index first, classify new material into the right layer, update source lineage, and avoid parallel summaries; first-layer sources may be indexed directly without creating second-layer notes
+- supplemental build: read the existing third-layer main note and material index first, classify new material into the right layer, update source lineage, and avoid parallel summaries; first-layer sources may be indexed directly with callable conclusions instead of creating second-layer notes
 
 This branch is best when the project's main deficit is not organization but reusable domain judgment.
 
@@ -361,7 +361,7 @@ Checklist:
 3. define the domain boundary and the real problems the knowledge base should help answer
 4. create or update the harness: three-layer folders, third-layer main note, material index, local instructions, and optional application/case/open-question pages only when justified
 5. promote source material into the right material layer while preserving provenance
-6. update `AGENTS.md`, README, indexes, and logs
+6. update `AGENTS.md`, README, indexes, and logs; when first-layer material is useful but not worth promotion, write a compact viewpoint index entry with keywords, conclusions, boundaries, and third-layer tags
 7. stop when a future query has a clear reading path and application routine
 
 ## Working with scripts and data
