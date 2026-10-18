@@ -12,3 +12,17 @@ __pycache__/
 .vscode/
 .idea/
 
+
+# Asset allocation: public text only; source files and private records stay local.
+/资产配置/01-第一层-底层资料/*
+!/资产配置/01-第一层-底层资料/素材入口.md
+!/资产配置/01-第一层-底层资料/政策与核验来源.md
+!/资产配置/01-第一层-底层资料/配置材料摘录与口径说明.md
+/资产配置/**/*.pdf
+/资产配置/**/*.html
+/资产配置/**/*.xlsx
+/资产配置/**/*.png
+/资产配置/**/*.jpg
+/资产配置/**/截图*/
+/资产配置/**/备份*/
+/资产配置/**/个人财务*/

@@ -26,6 +26,7 @@ LLM 的工作方式应当是渐进式披露：先读第三层主入口；如果�
 
 - `skill/llm-wiki-workspace/`: 用于维护文件夹 wiki 和垂直知识库的 Codex skill。
 - `技术分析/`: 一个技术分析垂直知识库样例，包含第三层主体、第二层材料和来源索引。
+- [资产配置](资产配置/README.md)：配置目标、组合风险、养老制度与长期资金安排。
 
 本仓库刻意不放 `examples/` 文件夹，因为“技术分析”本身就是当前的真实专题，而不是展示用样例。
 
@@ -43,7 +44,7 @@ LLM 的工作方式应当是渐进式披露：先读第三层主入口；如果�
 
 ### 声明
 
-本项目仅用于研究、学习和知识管理实验。`技术分析/` 中的内容不构成投资建议，也不保证任何交易策略有效。
+本项目仅用于研究、学习和知识管理实验。技术分析与资产配置内容不构成投资建议，也不保证任何交易策略有效。
 
 ## English
 
@@ -65,6 +66,7 @@ The intended LLM behavior is progressive disclosure: read the layer-3 main note 
 
 - `skill/llm-wiki-workspace/`: a Codex skill for folder wiki maintenance and vertical knowledge base construction.
 - `技术分析/`: a real technical-analysis vertical knowledge base, including the layer-3 body, layer-2 notes, and a source index.
+- [资产配置](资产配置/README.md): asset allocation, portfolio risk, pension arrangements, and long-term funding notes.
 
 There is no `examples/` directory. The Chinese `技术分析` folder is the working topic itself.
 
